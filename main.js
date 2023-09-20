@@ -24,4 +24,14 @@ const day = now.getDay();
 const hours = now.getHours();
 const min = now.getMinutes();
 const sec = now.getSeconds();
-console.log(sec);
+
+console.log(hours);
+
+let newHr = 0;
+
+if (hours > 12) {
+	newHr = hours - 12 + 'pm';
+} else {
+	newHr = hours + 'am';
+}
+console.log(newHr);
