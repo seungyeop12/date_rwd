@@ -9,6 +9,12 @@ hr.innerText = setNumbers(setHours(hours));
 m.innerText = setNumbers(min);
 s.innerText = setNumbers(sec);
 
+// const values = [setHours(hours), min, sec];
+
+// spans.forEach((el,idx) => {
+// 	el.innerText = setNumbers(values[idx]);
+// });
+
 function setNumbers(num) {
 	num < 10 && (num = '0' + num);
 	return num;
