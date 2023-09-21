@@ -1,5 +1,16 @@
 const [hr, m, s] = document.querySelectorAll('h1 span');
 
+setInterval(() => {
+	const now = new Date();
+	const hours = now.getHours();
+	const min = now.getMinutes();
+	const sec = now.getSeconds();
+
+	hr.innerText = setNumbers(setHours(hours));
+	m.innerText = setNumbers(min);
+	s.innerText = setNumbers(sec);
+}, 1000);
+
 const now = new Date();
 const hours = now.getHours();
 const min = now.getMinutes();
